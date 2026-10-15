@@ -1,17 +1,18 @@
 
 ---
+const studyUrl = `${import.meta.env.BASE_URL}study/index.html`;
 ---
 
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="refresh" content="0;url=/study/index.html" />
+    <meta http-equiv="refresh" content={`0;url=${studyUrl}`} />
     <title>Japanese Study App</title>
   </head>
   <body>
     <p>
       Opening Japanese Study App...
-      <a href="/study/index.html">Click here if not redirected</a>
+      <a href={studyUrl}>Open the app</a>
     </p>
   </body>
 </html>
